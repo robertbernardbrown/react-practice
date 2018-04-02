@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
-import Projects from "./Components/projects"
 
 class App extends Component {
   render() {
+    const title = <h1>This is Bob's app</h1>;
+    const another = <h1>Another</h1>;
+    let cat = false;
     return (
       <div className="App">
-        My App
-        <Projects projects={this.state.projects}/>
+        {
+          cat ? another : title
+        }
       </div>
     );
   }
